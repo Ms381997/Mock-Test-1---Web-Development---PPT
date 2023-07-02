@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 similar website</title>
+    <link rel="stylesheet" href="./style.css">
+    <!--link google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    *{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* header */
+nav{
+    display: flex;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+    /* align-items: center; */
+    justify-content: space-around;
+    margin-top: 2%;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+nav ul li:hover{
+    text-decoration: underline ;
+    background-color: rgb(180, 97, 248);
+    font-weight: 1100;
+}
+
+
+
+/* logo */
+.logo{
+    margin-left: 2%;
+}
+
+/* button */
+button{
+    background-color: rgb(17, 2, 104);
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    border: 1px solid rgb(180, 97, 248);
+    font-weight: 900px; 
+    width: fit-content;
+    border-radius: 5px;
+    
+}
+
+button:hover{
+    background-color: rgb(180, 97, 248);
+    color: black;
+}
+
+.text-button{
+    display: flex;
+    margin-left: 20%;
+    margin-bottom: 20%;
+}
+
+/* contant */
+section{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+/* left contant */
+h1{
+    padding-bottom: 50px;
+    padding-left: 20%;
+    font-size: 40px;
+    text-align: left;
+    color:rgb(17, 2, 104) ;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+/* h1 span */
+h1 span{
+    color: rgb(180, 97, 248);
+}
+
+/* p */
+p{
+    display: flex;
+    padding-left: 20%;
+    text-align: left;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    font-size: 15px; 
+    margin-bottom: 2%;
+}
+
+/* right contant */
+.image{
+    padding-right: 9%;
+    margin-left: 20px;
+
+}
+
+
+
+
+
+  </style>
+    
+</head>
+<body>
+    <section>
+        <nav>
+          <!--header-->
+        
+       <div>
+        <ul class="list">
+            <!--header list-->
+            <li><a href="#">Home</a></li> 
+            <li><a href="#">About</a></li> 
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+       </div>
+       <div class="logo">
+        <!--logo-->
+       <img src="https://raw.githubusercontent.com/pwlive/fullstackwebdevelopment/1f493053570bf725b7af69e53878f4f83fadfe56/Assignment_02(HTML%2BCSS)/assets/Logo.png" alt="logo" height="50px" width="190px">
+   </div>
+       <div>
+        <button>Contact us</button>
+       </div>
+        </nav>
+    </section>
+    <!--contant left-->
+    <section>
+        <div>
+            <h1 class="left-contant">
+                We Help You <br> <span>Crush</span> Your <br>  Competition 
+                </h1>
+           
+            <p class="left-small-contant">
+            Build trust to connect your brand to billions of users and grow your revenue  through SEO.</p>
+            <button class="text-button">See our services</button>
+        </div>
+        <!--contant right-->
+        <div class="image">
+            <img src="https://raw.githubusercontent.com/pwlive/fullstackwebdevelopment/1f493053570bf725b7af69e53878f4f83fadfe56/Assignment_02(HTML%2BCSS)/assets/Header%20Illustration.png" alt="image" height="400px" width="500px">
+        </div>
+    </section>
+       
+     
+</body>
+</html>

@@ -1,0 +1,35 @@
+Q) Explain what is execution context in detail with diagram.
+Ans) Execution context is the concept for describing the internal working of a code. In JavaScript, the environment that enables the JavaScript code to get executed is what we call JavaScript Execution Context. It is the execution context that decides which code section has access to the functions, variables, and objects used in the code. During the execution context, the specific code gets parsed line by line then the variables and functions are stored in the memory. An execution context is similar to a container that stores variables, and the code gets evaluated and then executed. Thus, it is the execution context that provides an environment for the specific code to get executed.
+Types of Execution Context
+The types of execution context in JavaScript are:
+
+1.Global Execution Context/GEC
+2.Functional Execution Context/FEC
+3.Eval Execution Context
+Begin to discuss each one by one:
+
+Global Execution Context:-
+GEC / Global Execution Context is also called the base/default execution. Any JavaScript code which does not reside in any function will be present in the global execution context. The reason behind its name 'default execution context' where the code begins its execution when the file first loads in the web browser. GEC performs the two following tasks:
+
+Firstly, it creates a global object where it is for Node.js and Window object for the browsers.
+Secondly, reference the Windows object to 'this' keyword.
+Create a memory heap in order to store variables and function references.
+Then it stores all the functions declarations in the memory heap area and the variables in the GEC with initial values as 'undefined'.
+
+Functional Execution Context
+FEC or Functional Execution Code is that type of context which is created by the JavaScript engine when any function call is found. Every function has its own execution context, and thus unlike GEC, the FEC can be more than one. Also, FEC can access the entire code of the GEC, but it is not possible for GEC to access all the code of the FEC. During the GEC code execution, a function call is initiated, and when found by the JS engine, it creates a new FEC for that specific function.
+
+Eval Function Execution Context
+Any JS code that gets executed within the eval function creates and holds its own execution context. However, the eval function is not used by the JavaScript developers, but it is a part of the Execution Context.
+
+Global Execution Context Vs. Function Execution Context
+There are the following differences between the two:
+
+Global Execution Context	Function Execution Context
+1.It creates a global scope.	                                     |  It creates an argument object.
+2.It creates an object known as 'this.                             |	It points to the Window object by default.
+3.It set up memory space for the functions and variables that      |
+are globally defined.	                                             |   It set up memory space for functions and variables that are defined within the function only.
+4.The GEC, while setting any function declaration in the memory,   |
+assigns a default value as 'undefined' to the variable             |
+declaration.	                                                     |   The FEC, while setting any function declaration in the memory, assigns a default value as 'undefined' to the variable declaration. With this, it creates its own Execution Stack also.

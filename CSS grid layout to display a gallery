@@ -1,0 +1,63 @@
+<!-- Implement a CSS grid layout to display a gallery of images in a grid format for design refer the image shown below, replace the empty boxed with actual images -->
+<!-- code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS grid layout to display</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body{
+    height: 100vh;
+    width: 99%;
+  
+}
+
+.box{
+   display: grid;
+   margin: 10% 30% 10% 20%;
+   grid-template-columns: auto;
+   grid-template-rows: 200px 150px;
+
+}
+.one{
+    margin-left: 10px;
+}
+.two{
+    margin-left: 15px;
+}
+.three{
+    align-self: center;
+    margin: 15px 15px 15px 12px;
+}
+.right_side{
+   
+    display: grid;
+    margin-left: 52%;
+    row-gap: 20px;
+    margin-top: -30%;
+}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="left_side">
+    <img class="one" src="https://scontent.flko7-3.fna.fbcdn.net/v/t39.30808-6/352408975_2260511074141165_8355335576435708986_n.jpg?stp=dst-jpg_p526x296&_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=VhxdjeAktowAX85lhw7&_nc_ht=scontent.flko7-3.fna&oh=00_AfAYyHEEcKX-RX9VLV9sqNaP4joQTdBiB4_vZldIe5xMRg&oe=64A74588" alt="" height="200px" width="150px">
+
+    <img class="two" src="https://scontent.flko7-3.fna.fbcdn.net/v/t39.30808-6/354256713_2258549847670621_6932575771006017515_n.jpg?stp=cp6_dst-jpg_p526x296&_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ODnGZRXtpsEAX-SjnT7&_nc_ht=scontent.flko7-3.fna&oh=00_AfCAQ_grv83AB5BRM30t0KzUMUWu-0QrbAyL_Z0XEx9FGw&oe=64A62C46" alt="" height="200px" width="150px"> <br>
+    
+    <img class="three" src="https://scontent.flko7-2.fna.fbcdn.net/v/t39.30808-6/287501401_1983729355152673_6845896605285115327_n.jpg?stp=dst-jpg_p720x720&_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_ohc=DgH3q2W5XxkAX94za9b&_nc_ht=scontent.flko7-2.fna&oh=00_AfDN2khUlJ17sfuvmm0PBh_H_W_wZbHiFkSgG34CJONEOA&oe=64A76788" alt="" height="150px" width="318px">
+  </div>
+  <div class="right_side">
+    <img class="four" src="https://scontent.flko7-3.fna.fbcdn.net/v/t39.30808-6/217634705_1739244882934456_3651097205994885069_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=oWUTl0_RKiEAX-SxX5H&_nc_ht=scontent.flko7-3.fna&oh=00_AfBXscoN7addxZJB-t5Q_GvXk7fy3FKUE0XZ1Ibt0_JpcQ&oe=64A7B545" alt="" height="110px" width="200px">
+
+    <img class="five" src="https://scontent.flko7-2.fna.fbcdn.net/v/t1.6435-9/121631094_1530004707191809_4503775597910076599_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=84a396&_nc_ohc=vR5hfayXgWgAX89SMuB&_nc_ht=scontent.flko7-2.fna&oh=00_AfDazPI3yxc72QeM0jkJCwSDqk99jR3Nm4OqruMLXhoAMQ&oe=64C9594D" alt="" height="110px" width="200px">
+
+    <img class="six" src="https://scontent.flko7-2.fna.fbcdn.net/v/t1.6435-9/65887758_1128306294028321_7695427332424597504_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=ZuIL6Knpx5EAX91E738&_nc_ht=scontent.flko7-2.fna&oh=00_AfAeoPQbjlssER8AY4nX4EKzlSeTFeUuCmATrmF8YtZEiA&oe=64C96965" alt="" height="110px" width="200px">
+  </div>
+  </div>
+
+</body>
+</html>
